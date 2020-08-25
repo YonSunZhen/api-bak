@@ -1,0 +1,2 @@
+### 获取某个组下面的雇员信息
+Get http://10.219.107.250/hololens/api/v1/hcm/employees?group_name=CT_DES

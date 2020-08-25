@@ -1,0 +1,7 @@
+### 获取所有项目
+Get http://10.219.107.250/hololens/api/v1/alm/bu/CT/projects
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 获取某个BU的group
+Get http://10.219.107.250/hololens/api/v1/alm/bu/CT/groups
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff

@@ -1,0 +1,33 @@
+
+### 用户信息查找
+Get http://10.219.107.250/hololens/api/v1/uamc/users/search?query=黄力&userActive=2
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 用户信息查找
+Get http://localhost:8090/users/search?query=黄力
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 查询某个用户
+Get http://10.219.107.250/hololens/api/v1/uamc/users?uid=uidq2225
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+### 查询全部用户
+Get http://10.219.107.250/hololens/api/v1/uamc/users?uid=uidq2225
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 激活或禁用某个用户
+Put http://10.219.107.250/hololens/api/v1/uamc/users/uidq2225/is_user_active/1
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 获取某个角色的用户列表
+Get http://10.219.107.250/hololens/api/v1/uamc/roles/ms-tech-tree-user/users
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 获取某个权限的用户列表
+Get http://10.219.107.250/hololens/api/v1/uamc/permissions/ms-tech-tree-guest/users
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 查询微服务
+Get http://10.219.107.250/hololens/api/v1/uamc/ms
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff

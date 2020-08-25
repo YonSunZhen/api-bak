@@ -1,0 +1,10 @@
+### 获取plm所有项目
+Get http://10.219.107.250/hololens/api/v1/plm/business_units/CT/projects
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 获取plm所有项目
+Get http://10.219.107.80/hololens/api/v1/plm/business_units/CT/projects
+access-token: 22f264ac-67ae-4cdd-b12a-5beca17415a0
+
+### 获取BU列表
+Get http://10.219.107.250/hololens/api/v1/plm/business_units

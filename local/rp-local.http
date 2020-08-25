@@ -1,0 +1,99 @@
+### 同步项目
+Get http://localhost:8092/projects/sync
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+### 获取领导下属树结构 zhanghao 10S01029 
+Get http://localhost:8092/users/subordinates/10S01029
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 获取领导下属树结构 linwenqin 10S02445
+Get http://localhost:8092/users/subordinates/10S02445
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+### 获取领导下属树结构 10S01029 张皓 10S00772 黄力 10S00760 钟启兴 10S00980 谭广华 
+Get http://localhost:8092/vorg/subordinates/10S00772
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+// 10S03581 10S03421 10S02951 10S02193 10S01894 10S01892 10S01832 10S00772
+
+
+### 添加部门预估工时
+Post http://localhost:8092/dept_estimate
+Content-Type: application/json
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+{
+  "project_id": 1,
+  "uid": "uidq2225",
+  "year": "2021",
+  "estimate_hour": [1,2,3,4,5,6,7,8,9,10,11,12]
+}
+
+### 获取部门预估工时
+Get http://localhost:8092/dept_estimate?uid=uidq2225&year=2020
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 修改部门预估工时
+Put http://localhost:8092/dept_estimate/3
+Content-Type: application/json
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+{
+  "uid": "uidq2226",
+  "estimate_hour": [0,2,3,4,5,6,7,8,9,10,11,12],
+  "year": 2020,
+  "project_id": 3
+}
+
+### 删除部门预估工时
+DELETE http://localhost:8092/dept_estimate/3
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+
+### 获取项目类型
+Get http://localhost:8092/project_type?status=1
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 根据项目类型获取项目
+Get http://localhost:8092/projects?project_type=1
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+### 获取学科
+Get http://localhost:8092/discipline
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+
+### 获取项目&项目工时
+Get http://localhost:8092/project_estimate/projects?project_type=1&source_system=1
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 添加项目预估工时
+Post http://localhost:8092/project_estimate
+Content-Type: application/json
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+{
+  "project_id": 1,
+  "discipline_id": "1",
+  "year": "2020",
+  "estimate_hour": [1,2,3,4,5,6,7,8,9,10,11,12]
+}
+
+### 获取项目预估工时
+Get http://localhost:8092/project_estimate/projects?project_type=1
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+
+
+### 获取项目记录工时
+Get http://localhost:8092/project_record
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+
+### 按部门统计，获取部门内不同组别，对应的预估工时、考勤工时、填写工时
+Get http://localhost:8092/statistics/department/manhours?year=2020
+access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
