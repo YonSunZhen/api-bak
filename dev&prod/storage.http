@@ -1,0 +1,6 @@
+Post http://localhost:8080/folder
+Content-Type: application/json
+
+{
+  "folderName": "文件夹1"
+}

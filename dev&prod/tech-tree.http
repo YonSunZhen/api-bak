@@ -1,0 +1,28 @@
+Get http://localhost:8085/tech/test?no=100002&is_tech_cancel=0
+access-token: {{accessToken}}
+
+
+### test
+Get http://localhost:8085/tech/test
+access-token: {{accessToken}}
+
+###
+Get http://localhost:8085/tech/tree?category=field
+access-token: {{accessToken}}
+
+###
+Get http://localhost:8085/tech?no=100002002016&is_tech_cancel=0
+access-token: {{accessToken}}
+
+
+### 
+GET http://10.219.107.80/hololens/api/v1/uamc/permissions/ms-tech-tree-user/users
+access-token: {{accessToken}}
+
+### 
+GET https://itc.desaysv.com/hololens/api/v1/tech-tree/tech/tree?category=field
+access-token: {{accessToken}}
+
+###
+GET https://itc.desaysv.com/hololens/api/v1/tech-tree/committee?no=100002&is_tech_cancel=0
+access-token: {{accessToken}}

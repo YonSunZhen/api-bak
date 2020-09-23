@@ -1,23 +1,23 @@
 ### 获取雇员信息
 Get http://10.219.107.250/hololens/api/v1/vorg/employees/search?query=邱小波
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}
 
 
 ### 获取某个组的组织架构
 Get http://10.219.107.250/hololens/api/v1/vorg/organizations/ITTI_FRA_FA
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}
 
 ### 获取某个组的组织架构
 Get http://10.219.107.250/hololens/api/v1/vorg/employees
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}
 
 
 ### 获取某个leader的下级
 Get http://10.219.107.250/hololens/api/v1/vorg/employees/10S01029/subordinates
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}
 
 ### 10S02410 10S00772 10S02616
 Get http://localhost:8092/vorg/subordinates/10S00772
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}
 
 

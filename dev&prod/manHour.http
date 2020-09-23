@@ -1,3 +1,3 @@
 ### 获取项目列表
 Get http://10.219.107.250/hololens/api/v1/man-hour/projects
-access-token: ef9a2034-192c-4fe6-b171-e0852dddedff
+access-token: {{accessToken}}

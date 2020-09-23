@@ -1,0 +1,33 @@
+@port = 8100
+
+### 添加埋点信息
+Post http://{{host}}:{{port}}/collection
+Content-Type: application/json
+access-token: {{accessToken}}
+
+{
+  "device_info": 1,
+  "access_token": "{{accessToken}}",
+  "function": "test",
+  "haha": 777
+}
+
+### 上传excel数据 filename必须
+Post http://{{host}}:{{port}}/upload
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+access-token: {{accessToken}}
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="test"
+
+test
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="module"
+
+wbs_task
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="excel_data"; filename="test1.xlsx"
+
+< ../assets/excel/test1.xlsx
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
