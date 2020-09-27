@@ -1,26 +1,28 @@
+@port = 8092
+
 ### 同步项目
-Get http://localhost:8092/projects/sync
+Get http://{{host}}:{{port}}/projects/sync
 access-token: {{accessToken}}
 
 
 ### 获取领导下属树结构 zhanghao 10S01029 
-Get http://localhost:8092/users/subordinates/10S01029
+Get http://{{host}}:{{port}}/users/subordinates/10S01029
 access-token: {{accessToken}}
 
 ### 获取领导下属树结构 linwenqin 10S02445
-Get http://localhost:8092/users/subordinates/10S02445
+Get http://{{host}}:{{port}}/users/subordinates/10S02445
 access-token: {{accessToken}}
 
 
-### 获取领导下属树结构 10S01029 张皓 10S00772 黄力 10S00760 钟启兴 10S00980 谭广华 
-Get http://localhost:8092/vorg/subordinates/10S00772
+### 获取领导下属树结构 10S01029 张皓 10S00772 黄力 10S00760 钟启兴 10S00980 谭广华
+Get http://{{host}}:{{port}}/vorg/subordinates/10S00772
 access-token: {{accessToken}}
 
 // 10S03581 10S03421 10S02951 10S02193 10S01894 10S01892 10S01832 10S00772
 
 
 ### 添加部门预估工时
-Post http://localhost:8092/dept_estimate
+Post http://{{host}}:{{port}}/dept_estimate
 Content-Type: application/json
 access-token: {{accessToken}}
 
@@ -32,11 +34,11 @@ access-token: {{accessToken}}
 }
 
 ### 获取部门预估工时
-Get http://localhost:8092/dept_estimate?uid=uidq2225&year=2020
+Get http://{{host}}:{{port}}/dept_estimate?uid=uidq2225&year=2020
 access-token: {{accessToken}}
 
 ### 修改部门预估工时
-Put http://localhost:8092/dept_estimate/3
+Put http://{{host}}:{{port}}/dept_estimate/3
 Content-Type: application/json
 access-token: {{accessToken}}
 
@@ -48,32 +50,32 @@ access-token: {{accessToken}}
 }
 
 ### 删除部门预估工时
-DELETE http://localhost:8092/dept_estimate/3
+DELETE http://{{host}}:{{port}}/dept_estimate/3
 access-token: {{accessToken}}
 
 
 
 ### 获取项目类型
-Get http://localhost:8092/project_type?status=1
+Get http://{{host}}:{{port}}/project_type?status=1
 access-token: {{accessToken}}
 
 ### 根据项目类型获取项目
-Get http://localhost:8092/projects?project_type=1
+Get http://{{host}}:{{port}}/projects?project_type=1
 access-token: {{accessToken}}
 
 
 ### 获取学科
-Get http://localhost:8092/discipline
+Get http://{{host}}:{{port}}/discipline
 access-token: {{accessToken}}
 
 
 
 ### 获取项目&项目工时
-Get http://localhost:8092/project_estimate/projects?project_type=1&source_system=1
+Get http://{{host}}:{{port}}/project_estimate/projects?project_type=1&source_system=1
 access-token: {{accessToken}}
 
 ### 添加项目预估工时
-Post http://localhost:8092/project_estimate
+Post http://{{host}}:{{port}}/project_estimate
 Content-Type: application/json
 access-token: {{accessToken}}
 
@@ -85,22 +87,22 @@ access-token: {{accessToken}}
 }
 
 ### 获取项目预估工时
-Get http://localhost:8092/project_estimate/projects?project_type=1
+Get http://{{host}}:{{port}}/project_estimate/projects?project_type=1
 access-token: {{accessToken}}
 
 
 
 ### 获取项目记录工时
-Get http://localhost:8092/project_record
+Get http://{{host}}:{{port}}/project_record
 access-token: {{accessToken}}
 
 ### 按部门统计，获取部门内不同组别，对应的预估工时、考勤工时、填写工时
-Get http://localhost:8092/statistics/department/manhours?year=2020
+Get http://{{host}}:{{port}}/statistics/department/manhours?year=2020
 access-token: {{accessToken}}
 
 
 ### 添加埋点
-Post http://localhost:8092/analytics/point_info
+Post http://{{host}}:{{port}}/analytics/point_info
 Content-Type: application/json
 access-token: {{accessToken}}
 

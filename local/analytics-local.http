@@ -7,13 +7,13 @@ access-token: {{accessToken}}
 
 {
   "device_info": 1,
-  "access_token": "{{accessToken}}",
+  "access_token": "ef9a2034-192c-4fe6-b171-e0852dddedff",
   "function": "test",
   "haha": 777
 }
 
 ### 上传excel数据 filename必须
-Post http://{{host}}:{{port}}/upload
+Post http://{{host}}:{{port}}/upload/wbs_task
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
 access-token: {{accessToken}}
 
@@ -27,7 +27,28 @@ Content-Disposition: form-data; name="module"
 
 wbs_task
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-Content-Disposition: form-data; name="excel_data"; filename="test1.xlsx"
+Content-Disposition: form-data; name="excel_data"; filename="pm_tl_pl.xlsx"
 
-< ../assets/excel/test1.xlsx
+< ../assets/excel/pm_tl_pl.xlsx
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+### 上传excel数据 filename必须
+Post http://{{host}}:{{port}}/upload/pm_tl_pl
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+access-token: {{accessToken}}
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="test"
+
+test
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="module"
+
+wbs_task
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="excel_data"; filename="pm_tl_pl.xlsx"
+
+< ../assets/excel/pm_tl_pl.xlsx
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
