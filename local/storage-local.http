@@ -1,0 +1,33 @@
+@port = 8080
+
+### 添加文件夹
+Post http://{{host}}:{{port}}/folders
+Content-Type: application/json
+
+{
+  "rsParentNo": "100002001",
+  "folderName": "文件夹4"
+}
+
+
+### 上传图片
+Post http://{{host}}:{{port}}/images
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="rsParentNo"
+
+100001
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="imgOriginName"
+
+img1
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="imgData"; filename="avatar1.jpg"
+
+< ../assets/img/avatar.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+
+### 获取所有文件关系
+GET http://{{host}}:{{port}}/store_rs/tree
