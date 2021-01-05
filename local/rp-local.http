@@ -109,3 +109,75 @@ access-token: {{accessToken}}
 {
   "page_id": 1001
 }
+
+### 获取组织Tree
+Get http://10.219.107.250/hololens/api/v1/resource-plan/orgnazition/tree
+access-token: {{accessToken}}
+
+### 53 68
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/project_view?org_id=53&start_year=2020&start_month=01&end_year=2021&end_month=06
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/member_month?org_id=55&uid=uidp5340&year=2021&month=2
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/org_summary?org_id=1&start_year=2019&start_month=01&end_year=2020&end_month=12&project_id=1
+access-token: {{accessToken}}
+
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/orgnazition_view?org_id=1&start_year=2019&start_month=01&end_year=2021&end_month=12
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/orgnazition/tree?org_id=1
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/orgResource?org_id=53&year=2021&month=1
+access-token: {{accessToken}}
+
+###
+Post http://10.219.107.250/hololens/api/v1/resource-plan/orgResource
+Content-Type: application/json
+access-token: {{accessToken}}
+
+{
+  "org_id": 55,
+  "year": 2020,
+  "month": 12,
+  "member_plan": 61
+}
+
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/member_projects?org_id=55&year=2020&month=12&uid=uidq0971
+access-token: {{accessToken}}
+
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/orgnazition
+access-token: {{accessToken}}
+
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_chart/org_res_deviation?org_id=1&start_year=2019&start_month=1&end_year=2021&end_month=1
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/almProjects?project_id=1
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/almProjects?estimated_start_date=2018-01-01&completion_date=2018-12-30
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/almProjects/all_project_type
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/orgnazition/members/search?query=uid&org_id=42
+access-token: {{accessToken}}
