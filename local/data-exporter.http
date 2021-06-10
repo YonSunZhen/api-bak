@@ -1,0 +1,32 @@
+@port = 8082
+
+### 
+Get http://{{host}}:{{port}}/performance/21Q1
+
+{
+  "xxx": [
+    {
+      id: DM-IPU02-19A,
+      lateral: [
+        {
+          "评估项": "沟通能力",
+          "得分": 3,
+          "角色": "SE_RM"
+        },
+        {
+          "评估项": "主动性",
+          "得分": 3,
+          "角色": "SE_RM"
+        }
+      ],
+      type: "Platform",
+      pcr: "",
+      dmg: "",
+      bom: "",
+      budget: "",
+      close: "",
+      复杂度: "",
+      完成度: ""
+    }
+  ]
+}

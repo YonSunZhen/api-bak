@@ -1,0 +1,37 @@
+###
+Get https://itc.desaysv.com/dfs/hololens/quick-start/project_track.pdf
+
+
+###
+Get http://10.219.107.81:32076/exporter
+
+
+###
+Get http://10.219.107.81:32076/auth/publicKey
+
+###
+Put http://10.219.107.81:32076/auth/secret_key
+Content-Type: application/json
+
+{
+  "job_id": 1,
+  "job_status": 2
+}
+
+###
+Post http://10.219.107.81:32076/auth/user/login
+Content-Type: application/json
+
+{
+  "job_id": 1,
+  "job_status": 2
+}
+
+
+###
+Get https://itc.desaysv.com/devminus/loginInfos?accessToken=bf1798b1-6b63-4f97-a3f7-0d0166423d9b
+
+
+###
+Post https://itc.desaysv.com/hololens/api/v1/mail-sender/send_mail
+access-token: 1310df56-9ee0-4b31-8e05-1de36de0f71a

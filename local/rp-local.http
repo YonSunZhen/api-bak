@@ -187,9 +187,18 @@ Get http://10.219.107.250/hololens/api/v1/resource-plan/organization/members/sea
 access-token: {{accessToken}}
 
 ###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/organization/search?uid=uidq2226
+access-token: {{accessToken}}
+
+###
 Delete http://10.219.107.250/hololens/api/v1/resource-plan/org_estimates/project?org_id=55&year=2021&month=3&project_id=324
 access-token: {{accessToken}}
 
 ###
 Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/members?org_id=55&project_id=324&year=2021&month=3
+access-token: {{accessToken}}
+
+
+###
+Get http://10.219.107.250/hololens/api/v1/resource-plan/org_estimate_query/orgnazition_view?org_id=65&start_year=2021&start_month=1&end_year=2021&end_month=12
 access-token: {{accessToken}}

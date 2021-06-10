@@ -1,0 +1,75 @@
+### 添加DQ设备
+Post https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+Content-Type: application/json
+
+{
+  "device_name": "haha2",
+  "asset_no": 1,
+  "specification_type": "haha",
+  "location": "location"
+}
+
+### 修改DQ设备信息
+Put https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices/75
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+Content-Type: application/json
+
+{
+  "device_name": "haha11",
+  "asset_no": 11
+}
+
+
+### 获取DQ设备列表
+Get https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices?dq_device_id=1
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+
+### 管理员删除DQ设备
+DELETE https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices/76
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+
+### 获取DQ设备二维码列表 待定
+Get https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices/qr_code?dq_device_id=77
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+
+
+### 获取管理员名下DQ设备列表
+Get https://itc.desaysv.com/devminus/assistant/api/v1/dq_devices_user_rs/uidq2225?page_no=1&page_size=1
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+
+
+### 扫码借用设备
+Post https://itc.desaysv.com/devminus/assistant/api/v1/dq_device_borrow_records/borrow
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+Content-Type: application/json
+
+{
+  "dq_device_id": 78
+}
+
+### 归还DQ设备
+Put https://itc.desaysv.com/devminus/assistant/api/v1/dq_device_borrow_records/return
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+Content-Type: application/json
+
+{
+  "dq_device_id": 77,
+  "actual_usage_time": 1
+}
+
+
+### 查询用户当前借用记录
+Get https://itc.desaysv.com/devminus/assistant/api/v1/dq_device_borrow_records/current_borrower/uidq2225
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+
+
+### 导出DQ设备借用记录到邮箱
+Put https://itc.desaysv.com/devminus/assistant/api/v1/dq_device_borrow_records/export2mail
+access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
+Content-Type: application/json
+
+{
+  "dq_device_id": [77, 78]
+}
+

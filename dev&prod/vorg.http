@@ -1,10 +1,10 @@
 ### 获取雇员信息
-Get http://10.219.107.250/hololens/api/v1/vorg/employees/search?query=邱小波
+Get http://10.219.107.250/hololens/api/v1/vorg/employees/search?query=金庆
 access-token: {{accessToken}}
 
 
 ### 获取某个组的组织架构
-Get http://10.219.107.250/hololens/api/v1/vorg/organizations/ITTI_FRA_FA
+Get http://10.219.107.250/hololens/api/v1/vorg/organizations/CT
 access-token: {{accessToken}}
 
 ### 获取某个组的组织架构
@@ -18,6 +18,10 @@ access-token: {{accessToken}}
 
 ### 10S02410 10S00772 10S02616
 Get http://localhost:8092/vorg/subordinates/10S00772
+access-token: {{accessToken}}
+
+###
+Get http://10.219.107.250/hololens/api/v1/vorg/employees?group_name=CT
 access-token: {{accessToken}}
 
 

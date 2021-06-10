@@ -9,3 +9,7 @@ access-token: {{accessToken}}
 ### 
 Get https://{{host}}{{baseUrl}}/{{moduleName}}/statistics/department/manhours?year=2020
 access-token: {{accessToken}}
+
+###
+Get http://10.133.71.49/hololens/api/v1/resource-plan/discipline?id=1
+access-token: 1310df56-9ee0-4b31-8e05-1de36de0f71a
