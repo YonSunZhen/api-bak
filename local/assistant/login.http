@@ -11,7 +11,7 @@ Post https://itc.desaysv.com/devminus/assistant/api/v1/auth/open_id
 Put https://itc.desaysv.com/devminus/assistant/api/v1/auth/secret_key
 
 ###
-Get https://itc.desaysv.com/devminus/assistant/api/v1/auth/login_info?access_token=0a6c08e9-1ca6-46ea-af31-f89e7fec3268
+Get https://itc.desaysv.com/devminus/assistant/api/v1/auth/login_info?access_token=5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 
 
 ###

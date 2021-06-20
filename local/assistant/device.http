@@ -10,7 +10,7 @@ Content-Type: application/json
 }
 
 ###
-Put https://itc.desaysv.com/devminus/assistant/api/v1/devices/haha
+Put https://itc.desaysv.com/devminus/assistant/api/v1/devices/haha1
 access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 Content-Type: application/json
 
@@ -19,12 +19,12 @@ Content-Type: application/json
 }
 
 ###
-Get https://itc.desaysv.com/devminus/assistant/api/v1/devices?device_no=haha
+Get https://itc.desaysv.com/devminus/assistant/api/v1/devices?device_no=haha1
 access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 
 
 ###
-DELETE https://itc.desaysv.com/devminus/assistant/api/v1/devices/haha
+DELETE https://itc.desaysv.com/devminus/assistant/api/v1/devices/haha1
 access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 
 ###
@@ -39,7 +39,6 @@ access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 ###
 Get https://itc.desaysv.com/devminus/assistant/api/v1/devices_user_rs/uidq2225
 access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
-
 
 ###
 Post https://itc.desaysv.com/devminus/assistant/api/v1/device_borrow_records/borrow

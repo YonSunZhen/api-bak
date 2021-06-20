@@ -4,7 +4,7 @@ access_token: 5005f9fe-fb4c-4520-8e8d-ee436f00dff5
 Content-Type: application/json
 
 {
-  "device_name": "haha2",
+  "device_name": "haha3",
   "asset_no": 1,
   "specification_type": "haha",
   "location": "location"
